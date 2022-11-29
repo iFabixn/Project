@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles_login.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="login__content">
+                <img src="assets/img/login.png" alt="login image" class="login__img">
+                <form action="" class="login__form">
+                    <div>
+                        <div class="nav__buttons">
+                            <a href="index.html" class="login__user-link">
+                                <i class="ri-arrow-go-back-fill"></i>
+                            </a>
+                    </div>
+                        <h1 class="login__title">
+                            <span>¡Bienvenido</span> de nuevo!                      
+                        </h1>
+                        <p class="login__description">
+                            Por favor inicia sesión para continuar.
+                        </p>       
+                    </div>
+                    <div>
+                        <div class="login__inputs">
+                            <div>
+                                <label for="" class="login__label">Correo</label>
+                                <input type="email" placeholder="Introduce tu correo electrónico" required class="login__input">
+                            </div>
+                            <div>
+                                <label for="" class="login__label">Contraseña</label>
+                                <div class="login__box">
+                                    <input type="password" placeholder="Introduce una contraseña" required class="login__input" id="input-pass">
+                                    <i class="ri-eye-off-line login__eye" id="input-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login__check">
+                            <input type="checkbox" class="login__check-input">
+                            <label for="" class="login__check-label">Recuerdame</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="login__buttons">
+                            <button class="login__button"><a href="index.html">Iniciar sesión</a></button>
+                        </div>
+                        <a href="register.html" class="login__forgot">¿No tienes una cuenta?</a>
+                        <br>
+                        <a href="olvidopass.html" class="login__forgot">¿Se te olvido la contraseña?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="assets/js/main__login__register.js"></script>
+    </body>
+</html>

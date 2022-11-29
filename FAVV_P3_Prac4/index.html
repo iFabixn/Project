@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Damian Flowers</title>
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="logo image">
+                    Damian Flowers
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <li class="nav__item">
+                            <a href="#inicio" class="nav__link active__link">Inicio</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#nosotros" class="nav__link">Nosotros</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#galeria" class="nav__link">Productos</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#ubicacion" class="nav__link">Ubicación</a>
+                        </li>
+                    </ul>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                    <img src="assets/img/leaf-branch-4.png" alt="nav image" class="nav__img-1">
+                    <img src="assets/img/leaf-branch-3.png" alt="nav image" class="nav__img-2">
+                </div>
+                <div class="nav__buttons">
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                        <a href="login.html" class="login__user-link">
+                            <i class="ri-user-line login-user"></i>
+                        </a>
+                        <a href="cart.html">
+                        <button id="boton-carrito"><i class="ri-shopping-cart-2-line"></i>
+                        <span id="contadorCarrito">0</span></button>
+                        </a>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-apps-2-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <div class="modal-contenedor">
+                <div class="modal-carrito">
+                    <h3>Carrito</h3>
+                    <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                    <div id="carrito-contenedor">
+                    </div>
+                    <h2>--------------------------------</h2>
+                    <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                    <button id="vaciar-carrito" class="boton-vaciar">Vaciar carrito</button>
+                    <br>
+                    <button id="comprar-carrito" class="boton-comprar">Comprar carrito</button>
+                </div>
+            </div>
+            <!--==================== Inicio ====================-->
+            <section class="inicio section" id="inicio">
+                <div class="inicio__container container grid">
+                    <img src="assets/img/bienvenida (1).png" alt="inicio image" class="inicio__image">
+                    <div class="inicio__data">
+                        <h1 class="inicio__title">
+                            Bienvenidos a Damian Flowers
+                            <div>
+                                <img src="assets/img/logo.png" alt="inicio image">
+                                Flores de Alta Calidad
+                            </div>
+                        </h1>
+                        <p class="inicio__description">
+                            Aquí puedes encontrar muchas flores para regalar
+                            a aquella persona que quieres.
+                        </p>
+                        <a href="index.html #galeria" class="button">
+                            Ordena Ya <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <img src="assets/img/leaf-branch-2.png" alt="inicio image" class="inicio__leaf-1">
+                <img src="assets/img/leaf-branch-4.png" alt="inicio image" class="inicio__leaf-2">
+            </section>
+            <!--==================== Nosotros ====================-->
+            <section class="nosotros section" id="nosotros">
+                <div class="nosotros__container container grid">
+                    <div class="nosotros__data">
+                        <span class="section__subtitle">Nosotros</span>
+                        <h2 class="section__title nosotros__title">
+                            <div>
+                                Toda Una
+                                <img src="assets/img/logo.png" alt="nosotros image">
+                            </div>
+                            Experiencia
+                        </h2>
+                        <p class="nosotros__descritpion">
+                            En Damian Flowers nos apasionan las flores y los detalles sorpresa. Creemos que a través de ellos podemos transmitir grandes sentimientos y emociones.
+                            A través de nuestro servicio con calidéz, confianza y complicidad brindamos experiencias increíbles dependiendo de las necesidades de cada cliente siendo un puente entre sus emociones y la entrega al destinatario final.
+                            Nos gusta romper la barrera de la distancia y hacer llegar detalles a personas especiales en momentos que recordarán siempre.
+                        </p>
+                    </div>
+                    <img src="assets/img/nosotros.png" alt="nosotros image" class="nosotros__img">
+                </div>
+                <img src="assets/img/leaf-branch-1.png" alt="nosotros image" class="nosotros__leaf">
+            </section>
+            <!--==================== Galeria ====================-->
+            <section class="galeria section" id="galeria">
+                <span class="section__subtitle">Las Mejores Flores</span>
+                    <h2 class="section__title">¡Escoge lo de tu interés!</h2>
+                    <div class="galeria__container container grid">
+                        <article class="galeria__card">
+                            <a href="bouquets.html">
+                            <img src="assets/img/1.png" alt="galeria image" class="galeria__img">
+                            </a>
+                            <h3 class="galeria__name">Bouquets</h3>
+
+                            <span class="galeria__description">Novias / Casual</span>
+                            <br>
+                            <span class="galeria__price">Desde: 120$</span>
+
+                            <button class="galeria__button">
+                                <a href="bouquets.html" class="bouquets__button">
+                                <i class="ri-shopping-bag-line"></i>
+                                </a>
+                            </button>
+                        </article>
+                        <article class="galeria__card">
+                            <a href="eventos.html">
+                            <img src="assets/img/2.png" alt="galeria image" class="galeria__img">
+                            </a>
+                            <h3 class="galeria__name">Eventos</h3>
+                            <span class="galeria__description">XV / Bodas / Cumpleaños / Bautizos / Comuniones</span>
+                            <span class="galeria__price">Desde: 120$</span>
+                            <button class="galeria__button">
+                                <a href="eventos.html" class="bouquets__button">
+                                    <i class="ri-shopping-bag-line"></i>
+                                    </a>
+                            </button>
+                        </article>
+                        <article class="galeria__card">
+                            <a href="paquetepzado.html">
+                            <img src="assets/img/3.png" alt="galeria image" class="galeria__img">
+                            <h3 class="galeria__name">Paquete Personalizado</h3>
+                            </a>
+                            <span class="galeria__description">Arreglo individual</span>
+                            <span class="galeria__price">Desde: 120$</span>
+                            <button class="galeria__button">
+                                <a href="paquetepzado.html" class="bouquets__button">
+                                    <i class="ri-shopping-bag-line"></i>
+                                    </a>
+                            </button>
+                        </article>
+                    </div>
+            </section>
+            <!--==================== Ubicacion ====================-->
+            <section class="ubicacion section" id="ubicacion">
+                <span class="section__subtitle">¿Nos buscas?</span>
+                    <h2 class="section__title">¡Aquí estamos!</h2>
+                    <br>
+                    <a href="https://maps.google.com/maps/dir//CETI+Plantel+Rio+Santiago+Camino+a+Matatl%C3%A1n+%23+2400+Fraccionamiento+Urbi+Paseos+de+Santiago+II+Tonal%C3%A1,+Jal./@20.660971,-103.1935012,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x8428b5e96e4bbd65:0x3116a98101842b0f
+                    Google Maps"><img src="assets/img/mapa (1).png" alt="mapa image" class="mapa__img"></a>
+            </section>
+            <!--==================== Lo mas reciente ====================-->
+            <section class="recently section" id="recently">
+                <div class="recently__container container grid">
+                    <div class="recently__data">
+                        <span class="section__subtitle">Lo más reciente:</span>
+                        <h2 class="section__title">
+                            Kit de Flores <br>
+                            3 Tipos de Ramos
+                        </h2>
+                        <p class="recently__description">
+                            Este kit es lo nuevo del día, contiene 3 tipos
+                            de ramos, puede ser cada uno de diferente flor.
+                        </p>
+                        
+                        <a href="cart.html" class="button">
+                            Ordena ahora <i class="ri-arrow-right-line"></i>
+                        </a>
+                        <img src="assets/img/spinach-leaf.png" alt="recently image" class="recently__data-img">
+                    </div>
+                    <img src="assets/img/spam (1).png" alt="recently  image" class="recently__img">
+                </div>
+                <img src="assets/img/leaf-branch-2.png" alt="recently image" class="recently__leaf-1">
+                <img src="assets/img/leaf-branch-3.png" alt="recently image" class="recently__leaf-2">
+            </section>
+            <!--==================== AVISO ====================-->
+            <section class="aviso section">
+                <div class="aviso__container container">
+                    <div class="aviso__content grid">
+                        <img src="assets/img/newsletter.png" alt="aviso image" class="aviso__img">
+                        <div class="aviso__data">
+                            <span class="section__subtitle">Recibe Notificaciones</span>
+                            <h2 class="section__title">
+                                Suscribete Para <br>
+                                Proximas Ofertas
+                            </h2>
+                            <form action="" class="aviso__form">
+                                <input type="email" placeholder="Ingresa tu email" class="aviso__input">
+
+                                <button class="button aviso__button">
+                                    Suscribete <i class="ri-send-plane-line"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <img src="assets/img/spinach-leaf.png" alt="aviso image" class="aviso__spinach">
+                </div>
+            </section>
+        </main>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        <img src="assets/img/logo.png" alt="logo image">
+                        Damian Flowers
+                    </a>
+                    <p class="footer__description">
+                        Tenemos envíos en toda la <br>
+                        republica Mexicana sin costo <br>
+                        extra.
+                    </p>
+                </div>
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">Home </h3>
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="index.html#inicio" class="footer__link">Inicio</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="index.html#nosotros" class="footer__link">Nosotros</a>
+                                </li>
+
+                                <li>
+                                    <a href="index.html#galeria" class="footer__link">Productos</a>
+                                </li>
+
+                                <li>
+                                    <a href="index.html#ubicacion" class="footer__link">Ubicacion</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Informacion</h3>
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="footer__link">Contacto</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#" class="footer__link">Ordenes y reembolsos</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UC49WMvckpy3M9dNobuYRSwg" class="footer__link">Videos</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="footer__link">Reservaciones</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Redes Sociales</h3>
+                            <ul class="footer__social">
+                                <a href="https://www.facebook.com/fabian.vazquez.35325074/" target="_blank" class="footer__social-link">
+                                    <i class="ri-facebook-circle-fill"></i>
+                                </a>
+
+                                <a href="https://www.instagram.com/fabianvaz04/" target="_blank" class="footer__social-link">
+                                    <i class="ri-instagram-fill"></i>
+                                </a>
+
+                                <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                            </ul>
+                    </div>
+                </div>
+                <img src="assets/img/spring-onion.png" alt="footer image" class="footer__onion">
+                <img src="assets/img/spinach-leaf.png" alt="footer image" class="footer__spinach">
+                <img src="assets/img/leaf-branch-4.png" alt="footer image" class="footer__leaf">
+            </div>
+            <div class="footer__info container">
+                <div class="footer__card">
+                    <img src="assets/img/footer-card-1.png" alt="footer image">
+                    <img src="assets/img/footer-card-2.png" alt="footer image">
+                    <img src="assets/img/footer-card-3.png" alt="footer image">
+                    <img src="assets/img/footer-card-4.png" alt="footer image">
+                </div>
+                <span class="footer__copy">
+                    &#169; Copyright Damian Flowers. All rights reserved
+                </span>
+            </div>
+        </footer>
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main__index.js"></script>
+        <script src="assets/js/stock.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/modal.js"></script>
+    </body>
+</html>
